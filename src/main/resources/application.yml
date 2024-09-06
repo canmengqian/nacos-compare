@@ -1,0 +1,16 @@
+sys:
+  app:
+    nacos:
+      clients:
+        - addr: 192.168.1.93:8848
+          username: nacos
+          password: nacos
+          name: left
+        - addr: 192.168.1.93:8848
+          username: nacos
+          password: nacos
+          name: right
+      compare:
+        left: left
+        right: right
+        name-matcher: similar
